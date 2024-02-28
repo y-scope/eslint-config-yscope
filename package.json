@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-yscope",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-scope/eslint-config-yscope.git"
+  },
+  "author": "YScope Inc.",
+  "peerDependencies": {
+    "@stylistic/eslint-plugin-js": "^1.6.2",
+    "@stylistic/eslint-plugin-jsx": "^1.6.2",
+    "@stylistic/eslint-plugin-plus": "^1.6.2",
+    "eslint": "^8.57.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-no-autofix": "^1.2.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-simple-import-sort": "^12.0.0"
+  }
+}
