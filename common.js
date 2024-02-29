@@ -1275,7 +1275,7 @@ module.exports = {
         ],
         "@stylistic/js/quote-props": [
             "error",
-            "as-needed",
+            "consistent-as-needed",
         ],
         "@stylistic/js/quotes": [
             "warn",
