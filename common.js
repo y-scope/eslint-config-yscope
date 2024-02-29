@@ -730,7 +730,7 @@ module.exports = {
             "warn",
             {
                 prefer: {
-                    return: "returns",
+                    return: "return",
                 },
                 requireParamDescription: false,
                 requireReturnDescription: false,
