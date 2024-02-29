@@ -15,6 +15,13 @@ module.exports = {
         "react-hooks",
         "react",
     ],
+    settings: {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx"],
+            },
+        },
+    },
     rules: {
         "@stylistic/jsx/jsx-child-element-spacing": [
             "error",
