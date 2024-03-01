@@ -5,9 +5,9 @@ This repository contains ESLint configurations for various JavaScript environmen
 ## Available Configurations
 
 - `yscope/common`: A general ESLint configuration suitable for a wide range of JavaScript projects.
-- `yscope/react`: Tailored ESLint configuration for React applications, enforcing best practices and React-specific rules.
-- `yscope/meteor`: A specialized ESLint configuration for Meteor projects, addressing the unique aspects of Meteor development.
-
+- `yscope/react`: Tailored ESLint configuration for React applications.
+- `yscope/meteor`: A specialized ESLint configuration for Meteor projects.
+- `yscope/backend-ts`: Designed specifically for TypeScript backend applications.
 ## Installation
 
 To get started with `eslint-config-yscope`, you can install the package:
@@ -38,6 +38,13 @@ eslintConfig
 ```json
 {
   "extends": ["yscope/meteor"]
+}
+```
+
+### For Backend TypeScript Configuration
+```json
+{
+  "extends": ["yscope/backend-ts"]
 }
 ```
 
