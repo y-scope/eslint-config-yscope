@@ -29,7 +29,7 @@ module.exports = {
         "block-scoped-var": [
             "error",
         ],
-        camelcase: [
+        "camelcase": [
             "error",
             {
                 properties: "never",
@@ -44,7 +44,7 @@ module.exports = {
         "class-methods-use-this": [
             "error",
         ],
-        complexity: [
+        "complexity": [
             "error",
         ],
         "consistent-return": [
@@ -56,7 +56,7 @@ module.exports = {
         "constructor-super": [
             "error",
         ],
-        curly: [
+        "curly": [
             "error",
             "multi-line",
         ],
@@ -72,7 +72,7 @@ module.exports = {
         "dot-notation": [
             "error",
         ],
-        eqeqeq: [
+        "eqeqeq": [
             "error",
         ],
         "for-direction": [
@@ -622,7 +622,7 @@ module.exports = {
         "prefer-template": [
             "error",
         ],
-        radix: [
+        "radix": [
             "error",
         ],
         "require-atomic-updates": [
@@ -714,7 +714,7 @@ module.exports = {
         "sort-vars": [
             "error",
         ],
-        strict: [
+        "strict": [
             "error",
         ],
         "symbol-description": [
@@ -745,7 +745,7 @@ module.exports = {
         "vars-on-top": [
             "error",
         ],
-        yoda: [
+        "yoda": [
             "error",
             "always",
         ],
@@ -808,7 +808,7 @@ module.exports = {
         "implicit-arrow-linebreak": [
             "off",
         ],
-        indent: [
+        "indent": [
             "off",
             2,
             {
@@ -947,7 +947,7 @@ module.exports = {
             "off",
             "consistent",
         ],
-        quotes: [
+        "quotes": [
             "off",
             "single",
             {
@@ -957,7 +957,7 @@ module.exports = {
         "rest-spread-spacing": [
             "off",
         ],
-        semi: [
+        "semi": [
             "off",
         ],
         "semi-spacing": [
