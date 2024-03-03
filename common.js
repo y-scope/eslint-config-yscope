@@ -699,9 +699,6 @@ module.exports = {
             },
         ],
         "sort-keys": [
-            "off",
-        ],
-        "no-autofix/sort-keys": [
             "warn",
             "asc",
             {
