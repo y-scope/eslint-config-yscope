@@ -16,7 +16,7 @@ npm install eslint-config-yscope --save-dev
 # or
 yarn add eslint-config-yscope --dev
 ```
-
+### For Older Node.js Versions
 If you are using `npm` version >= 3 or < 7, you need to install the `peerDependencies` specified in https://github.com/y-scope/eslint-config-yscope/blob/95089c98636bbcb01f282188b521ea8e7f898038/package.json#L13-L24
 Alternatively, you can upgrade your `npm` to the latest version compatible with your Node.js version.
 - Node.js verions below v16: `npm i -g npm@9`
