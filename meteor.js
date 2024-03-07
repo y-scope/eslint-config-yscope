@@ -1,5 +1,6 @@
 module.exports = {
     env: {
+        node: true,
         meteor: true,
     },
     extends: [
