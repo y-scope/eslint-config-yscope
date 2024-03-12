@@ -25,6 +25,9 @@ module.exports = {
             },
         },
     },
+    globals: {
+        process: "readonly",
+    },
     rules: {
         "@stylistic/jsx/jsx-child-element-spacing": [
             "error",
