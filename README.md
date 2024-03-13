@@ -11,10 +11,10 @@ This repository contains ESLint configurations for various JavaScript environmen
 ## Installation
 
 To get started with `eslint-config-yscope`, you can install the package:
-```sh
-npm install eslint-config-yscope --save-dev
+```shell
+npm install --save-dev eslint-config-yscope
 # or
-yarn add eslint-config-yscope --dev
+yarn add --dev eslint-config-yscope
 ```
 ### For Older Node.js Versions
 If you are using `npm` version >= 3 or < 7, you need to install the `peerDependencies` specified in https://github.com/y-scope/eslint-config-yscope/blob/95089c98636bbcb01f282188b521ea8e7f898038/package.json#L13-L24
@@ -47,6 +47,12 @@ eslintConfig
 ```
 
 ### For Backend TypeScript Configuration
+TypeScript-related dependencies are not automatically installed because not every configuration requires them.
+Before you can use this configuration, you need to install the dependencies manually.
+```shell
+npm install --save-dev typescript-eslint eslint-import-resolver-typescript
+```
+Then in your ESLint configuration:
 ```json
 {
   "extends": ["yscope/backend-ts"]
