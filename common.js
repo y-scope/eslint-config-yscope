@@ -1009,10 +1009,7 @@ module.exports = {
 
         "@stylistic/js/array-bracket-newline": [
             "error",
-            {
-                "multiline": true,
-                "minItems": 2,
-            }
+            "consistent",
         ],
         "@stylistic/js/array-bracket-spacing": [
             "error",
