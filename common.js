@@ -1203,6 +1203,11 @@ module.exports = {
                     minProperties: 2,
                     multiline: true,
                 },
+                ExportDeclaration: {
+                    consistent: false,
+                    minProperties: 2,
+                    multiline: true,
+                },
             },
         ],
         "@stylistic/js/object-curly-spacing": [
