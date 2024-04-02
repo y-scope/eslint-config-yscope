@@ -657,13 +657,12 @@ module.exports = {
             {
                 groups: [
                     [
-                        "^monaco-editor",
                         "^meteor",
-                        "^dotenv",
-                        "^axios",
                         "^prop-types",
                         "^react",
-                        "^uuid",
+                    ],
+                    [
+                        "^\\w",
                     ],
                     [
                         "^@",
@@ -683,21 +682,7 @@ module.exports = {
                 ],
             },
         ],
-        "sort-imports": [
-            "error",
-            {
-                allowSeparatedGroups: true,
-                ignoreCase: false,
-                ignoreDeclarationSort: true,
-                ignoreMemberSort: false,
-                memberSyntaxSortOrder: [
-                    "none",
-                    "all",
-                    "single",
-                    "multiple",
-                ],
-            },
-        ],
+        "sort-imports": ["off"],
         "sort-keys": [
             "warn",
             "asc",
@@ -1383,7 +1368,7 @@ module.exports = {
             "warn",
         ],
         "import/no-duplicates": [
-            "warn",
+            "error",
         ],
     },
 };
