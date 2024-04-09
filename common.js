@@ -724,12 +724,13 @@ module.exports = {
             "error",
             "always",
         ],
+
+        // deprecated by `@stylistic`
         "array-bracket-newline": [
             "off",
         ],
         "array-bracket-spacing": [
             "off",
-            "never",
         ],
         "array-element-newline": [
             "off",
@@ -750,7 +751,6 @@ module.exports = {
         ],
         "comma-dangle": [
             "off",
-            "always-multiline",
         ],
         "comma-spacing": [
             "off",
@@ -778,36 +778,12 @@ module.exports = {
         ],
         "generator-star-spacing": [
             "off",
-            "after",
         ],
         "implicit-arrow-linebreak": [
             "off",
         ],
         "indent": [
             "off",
-            2,
-            {
-                CallExpression: {
-                    arguments: 2,
-                },
-                FunctionDeclaration: {
-                    body: 1,
-                    parameters: 2,
-                },
-                FunctionExpression: {
-                    body: 1,
-                    parameters: 2,
-                },
-                MemberExpression: 2,
-                ObjectExpression: 1,
-                SwitchCase: 1,
-                ignoredNodes: [
-                    "ConditionalExpression",
-                ],
-                flatTernaryExpressions: false,
-                offsetTernaryExpressions: false,
-                ignoreComments: false,
-            },
         ],
         "jsx-quotes": [
             "off",
@@ -829,12 +805,6 @@ module.exports = {
         ],
         "max-len": [
             "off",
-            {
-                code: 80,
-                tabWidth: 2,
-                ignoreUrls: true,
-                ignorePattern: "goog.(module|require)",
-            },
         ],
         "max-statements-per-line": [
             "off",
@@ -871,9 +841,6 @@ module.exports = {
         ],
         "no-multiple-empty-lines": [
             "off",
-            {
-                max: 2,
-            },
         ],
         "no-tabs": [
             "off",
@@ -888,15 +855,7 @@ module.exports = {
             "off",
         ],
         "object-curly-newline": [
-            "error",
-            {
-                ImportDeclaration: {
-                    minProperties: 2,
-                },
-                ExportDeclaration: {
-                    minProperties: 2,
-                },
-            },
+            "off",
         ],
         "object-curly-spacing": [
             "off",
@@ -909,25 +868,18 @@ module.exports = {
         ],
         "operator-linebreak": [
             "off",
-            "after",
         ],
         "padded-blocks": [
             "off",
-            "never",
         ],
         "padding-line-between-statements": [
             "off",
         ],
         "quote-props": [
             "off",
-            "consistent",
         ],
         "quotes": [
             "off",
-            "single",
-            {
-                allowTemplateLiterals: true,
-            },
         ],
         "rest-spread-spacing": [
             "off",
@@ -946,11 +898,6 @@ module.exports = {
         ],
         "space-before-function-paren": [
             "off",
-            {
-                asyncArrow: "always",
-                anonymous: "never",
-                named: "never",
-            },
         ],
         "space-in-parens": [
             "off",
@@ -963,7 +910,6 @@ module.exports = {
         ],
         "spaced-comment": [
             "off",
-            "always",
         ],
         "switch-colon-spacing": [
             "off",
@@ -982,7 +928,6 @@ module.exports = {
         ],
         "yield-star-spacing": [
             "off",
-            "after",
         ],
 
         "@stylistic/js/array-bracket-newline": [
