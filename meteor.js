@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
     env: {
         node: true,
@@ -15,3 +16,4 @@ module.exports = {
         ],
     },
 };
+/* eslint-enable no-undef */

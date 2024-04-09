@@ -1,6 +1,8 @@
+/* eslint-disable sort-keys, no-undef */
 module.exports = {
     env: {
         browser: true,
+        node: false,
     },
     extends: [
         "./common",
@@ -284,3 +286,4 @@ module.exports = {
         },
     ],
 };
+/* eslint-disable sort-keys, no-undef */

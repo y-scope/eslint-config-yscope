@@ -1,6 +1,8 @@
+/* eslint-disable sort-keys, max-lines, no-undef, no-magic-numbers */
 module.exports = {
     env: {
         es6: true,
+        node: true,
     },
     parserOptions: {
         ecmaFeatures: {
@@ -1372,3 +1374,4 @@ module.exports = {
         ],
     },
 };
+/* eslint-disable sort-keys, max-lines, no-undef, no-magic-numbers */

@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys, no-undef */
 module.exports = {
     env: {
         node: true,
@@ -20,7 +21,8 @@ module.exports = {
         ],
         "no-restricted-syntax": "off",
         "no-underscore-dangle": [
-            "error", {
+            "error",
+            {
                 allow: [
                     "_id",
                 ],
@@ -28,4 +30,4 @@ module.exports = {
         ],
     },
 };
-
+/* eslint-enable sort-keys, no-undef */
