@@ -3,6 +3,7 @@ module.exports = {
     env: {
         node: true,
         meteor: true,
+        jest: true,
     },
     extends: [
         "./react",
