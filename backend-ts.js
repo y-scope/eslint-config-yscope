@@ -20,13 +20,22 @@ module.exports = {
             "error",
         ],
         "no-restricted-syntax": "off",
-        "no-underscore-dangle": [
-            "error",
-            {
-                allow: [
-                    "_id",
-                ],
-            },
+
+        // No need to specify types in docs in TS
+        "jsdoc/no-types": [
+            "warn",
+        ],
+        "jsdoc/check-types": [
+            "off",
+        ],
+        "jsdoc/require-param-type": [
+            "off",
+        ],
+        "jsdoc/require-property-type": [
+            "off",
+        ],
+        "jsdoc/require-returns-type": [
+            "off",
         ],
     },
 };

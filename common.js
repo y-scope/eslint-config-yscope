@@ -17,7 +17,16 @@ module.exports = {
         "@stylistic/plus",
         "simple-import-sort",
         "import",
+        "jsdoc",
     ],
+    settings: {
+        jsdoc: {
+            mode: "typescript",
+            tagNamePreference: {
+                returns: "return",
+            },
+        },
+    },
     rules: {
         "accessor-pairs": [
             "error",
@@ -423,7 +432,8 @@ module.exports = {
         "no-restricted-syntax": [
             "error",
             {
-                message: "Direct exporting of declarations is not allowed. Use export list or default exports instead.",
+                message: "Direct exporting of declarations is not allowed. " +
+                    "Use export list or default exports instead.",
                 selector: "ExportNamedDeclaration[declaration!=null]",
             },
         ],
@@ -633,18 +643,6 @@ module.exports = {
         "require-await": [
             "off",
         ],
-        "require-jsdoc": [
-            "warn",
-            {
-                require: {
-                    FunctionDeclaration: true,
-                    MethodDefinition: true,
-                    ClassDeclaration: true,
-                    ArrowFunctionExpression: false,
-                    FunctionExpression: false,
-                },
-            },
-        ],
         "require-unicode-regexp": [
             "off",
         ],
@@ -709,19 +707,6 @@ module.exports = {
         ],
         "use-isnan": [
             "error",
-        ],
-        "valid-jsdoc": [
-            "warn",
-            {
-                prefer: {
-                    return: "return",
-                },
-                requireParamDescription: false,
-                requireReturnDescription: false,
-                requireReturn: false,
-                requireReturnType: true,
-                requireParamType: true,
-            },
         ],
         "valid-typeof": [
             "error",
@@ -1371,6 +1356,174 @@ module.exports = {
         ],
         "import/no-duplicates": [
             "error",
+        ],
+
+        // deprecated by `eslint-plugin-jsdoc`
+        "require-jsdoc": [
+            "off",
+        ],
+        "valid-jsdoc": [
+            "off",
+        ],
+
+        "jsdoc/check-access": [
+            "warn",
+        ],
+        "jsdoc/check-alignment": [
+            "warn",
+        ],
+        "jsdoc/check-examples": [
+            "off",
+        ],
+        "jsdoc/check-indentation": [
+            "off",
+        ],
+        "jsdoc/check-line-alignment": [
+            "warn",
+        ],
+        "jsdoc/check-param-names": [
+            "warn",
+        ],
+        "jsdoc/check-property-names": [
+            "warn",
+        ],
+        "jsdoc/check-syntax": [
+            "off",
+        ],
+        "jsdoc/check-tag-names": [
+            "warn",
+        ],
+        "jsdoc/check-types": [
+            "warn",
+        ],
+        "jsdoc/check-values": [
+            "warn",
+        ],
+        "jsdoc/empty-tags": [
+            "warn",
+        ],
+        "jsdoc/implements-on-classes": [
+            "warn",
+        ],
+        "jsdoc/informative-docs": [
+            "warn",
+        ],
+        "jsdoc/match-description": [
+            "off",
+        ],
+        "jsdoc/match-name": [
+            "off",
+        ],
+        "jsdoc/multiline-blocks": "warn",
+        "jsdoc/no-bad-blocks": [
+            "off",
+        ],
+        "jsdoc/no-blank-blocks": "warn",
+        "jsdoc/no-blank-block-descriptions": [
+            "off",
+        ],
+        "jsdoc/no-defaults": "warn",
+        "jsdoc/no-missing-syntax": [
+            "off",
+        ],
+        "jsdoc/no-multi-asterisks": "warn",
+        "jsdoc/no-restricted-syntax": [
+            "off",
+        ],
+        "jsdoc/no-types": [
+            "off",
+        ],
+        "jsdoc/no-undefined-types": [
+            "off",
+        ],
+        "jsdoc/require-asterisk-prefix": [
+            "warn",
+        ],
+        "jsdoc/require-description": [
+
+            "warn",
+            {
+                checkConstructors: false,
+                checkGetters: false,
+                checkSetters: false,
+            },
+        ],
+        "jsdoc/require-description-complete-sentence": [
+
+            "off",
+        ],
+        "jsdoc/require-example": [
+            "off",
+        ],
+        "jsdoc/require-file-overview": [
+            "off",
+        ],
+        "jsdoc/require-hyphen-before-param-description": [
+
+            "warn",
+            "never",
+        ],
+        "jsdoc/require-jsdoc": [
+            "warn",
+        ],
+        "jsdoc/require-param": [
+            "warn",
+        ],
+        "jsdoc/require-param-description": [
+            "off",
+        ],
+        "jsdoc/require-param-name": [
+            "warn",
+        ],
+        "jsdoc/require-param-type": [
+            "warn",
+        ],
+        "jsdoc/require-property": [
+            "warn",
+        ],
+        "jsdoc/require-property-description": [
+            "off",
+        ],
+        "jsdoc/require-property-name": [
+            "warn",
+        ],
+        "jsdoc/require-property-type": [
+            "warn",
+        ],
+        "jsdoc/require-returns": [
+            "warn",
+        ],
+        "jsdoc/require-returns-check": [
+            "warn",
+        ],
+        "jsdoc/require-returns-description": [
+            "off",
+        ],
+        "jsdoc/require-returns-type": [
+            "warn",
+        ],
+        "jsdoc/require-throws": [
+            "warn",
+        ],
+        "jsdoc/require-yields": [
+            "warn",
+        ],
+        "jsdoc/require-yields-check": [
+            "warn",
+        ],
+        "jsdoc/sort-tags": [
+            "warn",
+        ],
+        "jsdoc/tag-lines": [
+
+            "warn",
+            "any",
+            {
+                startLines: 1,
+            },
+        ],
+        "jsdoc/valid-types": [
+            "warn",
         ],
     },
 };

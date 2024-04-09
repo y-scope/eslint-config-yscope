@@ -260,9 +260,13 @@ module.exports = {
         "react/no-unsafe": [
             "off",
         ],
+
+        // TODO: revisit
+        // Experimental: turn OFF for now and rely on `eslint-plugin-jsdoc`
         "react/prop-types": [
-            "error",
+            "off",
         ],
+
         "react/react-in-jsx-scope": [
             "off",
         ],
