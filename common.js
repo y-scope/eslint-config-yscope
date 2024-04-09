@@ -1389,6 +1389,9 @@ module.exports = {
         ],
         "jsdoc/check-param-names": [
             "warn",
+            {
+                checkRestProperty: true,
+            },
         ],
         "jsdoc/check-property-names": [
             "warn",
