@@ -1240,6 +1240,11 @@ module.exports = {
         "@stylistic/js/spaced-comment": [
             "error",
             "always",
+            {
+                block: {
+                    balanced: true,
+                },
+            },
         ],
         "@stylistic/js/switch-colon-spacing": [
             "error",
