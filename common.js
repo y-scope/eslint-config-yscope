@@ -341,10 +341,11 @@ module.exports = {
                 detectObjects: false,
                 enforceConst: true,
                 ignore: [
+                    -1,
                     0,
                     1,
                     2,
-                    -1,
+                    100,
                 ],
                 ignoreArrayIndexes: true,
                 ignoreClassFieldInitialValues: true,
