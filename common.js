@@ -1424,6 +1424,19 @@ module.exports = {
         ],
         "jsdoc/require-jsdoc": [
             "warn",
+            {
+                contexts: [
+                    ":has(" +
+                    "VariableDeclarator[init.callee.object.name='Object']" +
+                    "[init.callee.property.name='freeze']" +
+                    ")[declarations]",
+                    "Program > VariableDeclaration > .declarations > ArrowFunctionExpression",
+                ],
+                require: {
+                    FunctionDeclaration: true,
+                    FunctionExpression: true,
+                },
+            },
         ],
         "jsdoc/require-param": [
             "warn",
