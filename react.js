@@ -97,7 +97,8 @@ module.exports = {
             "error",
         ],
         "@stylistic/jsx/jsx-props-no-multi-spaces": [
-            "error",
+            // Disable this to allow line gaps between props
+            "off",
         ],
         "@stylistic/jsx/jsx-self-closing-comp": [
             "error",
