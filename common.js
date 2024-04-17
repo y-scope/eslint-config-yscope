@@ -1399,7 +1399,6 @@ module.exports = {
             "warn",
         ],
         "jsdoc/require-description": [
-
             "warn",
             {
                 checkConstructors: false,
@@ -1408,7 +1407,6 @@ module.exports = {
             },
         ],
         "jsdoc/require-description-complete-sentence": [
-
             "off",
         ],
         "jsdoc/require-example": [
@@ -1418,7 +1416,6 @@ module.exports = {
             "off",
         ],
         "jsdoc/require-hyphen-before-param-description": [
-
             "warn",
             "never",
         ],
@@ -1487,7 +1484,6 @@ module.exports = {
             "warn",
         ],
         "jsdoc/tag-lines": [
-
             "warn",
             "any",
             {
