@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yscope",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "",
   "scripts": {
     "publish": "npm install && git diff --exit-code && npm publish",
