@@ -211,7 +211,7 @@ module.exports = {
             "error",
         ],
         "no-continue": [
-            "error",
+            "off",
         ],
         "no-control-regex": [
             "error",
