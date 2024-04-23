@@ -94,6 +94,7 @@ module.exports = {
         ],
         "func-names": [
             "error",
+            "as-needed",
         ],
         "func-style": [
             "warn",
