@@ -312,7 +312,7 @@ module.exports = {
             "error",
         ],
         "no-invalid-this": [
-            "error",
+            "off",
         ],
         "no-irregular-whitespace": [
             "error",
