@@ -691,7 +691,9 @@ module.exports = {
                 ],
             },
         ],
-        "sort-imports": ["off"],
+        "sort-imports": [
+            "off",
+        ],
         "sort-keys": [
             "warn",
             "asc",
