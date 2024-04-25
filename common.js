@@ -997,7 +997,8 @@ module.exports = {
             "always",
         ],
         "@stylistic/js/func-call-spacing": [
-            "error",
+            // The rule has been renamed to "@stylistic/js/function-call-spacing"
+            "off",
         ],
         "@stylistic/js/function-call-argument-newline": [
             "error",
