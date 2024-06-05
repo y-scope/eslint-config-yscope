@@ -254,6 +254,9 @@ module.exports = {
         ],
         "no-empty-function": [
             "error",
+            {
+                allow: ["arrowFunctions"],
+            },
         ],
         "no-empty-pattern": [
             "error",
