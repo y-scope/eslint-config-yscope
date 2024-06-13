@@ -24,9 +24,6 @@ module.exports = {
         },
     },
     rules: {
-        "no-console": [
-            "error",
-        ],
         "no-restricted-syntax": "off",
 
         // No need to specify types in docs in TS
