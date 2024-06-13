@@ -4,7 +4,6 @@ module.exports = {
         node: true,
     },
     extends: [
-        "./common",
         "plugin:@typescript-eslint/strict-type-checked",
         "plugin:import/typescript",
     ],
