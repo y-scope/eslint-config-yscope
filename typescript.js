@@ -5,14 +5,22 @@ module.exports = {
     },
     extends: [
         "./common",
+        "plugin:@typescript-eslint/strict-type-checked",
+        "plugin:import/typescript",
     ],
     plugins: [
         "@typescript-eslint",
     ],
     parser: "@typescript-eslint/parser",
+    parserOptions: {
+        project: "tsconfig.json",
+    },
     settings: {
         "import/resolver": {
-            typescript: {},
+            typescript: {
+                alwaysTryTypes: true,
+                project: "tsconfig.json",
+            },
         },
     },
     rules: {
@@ -37,6 +45,20 @@ module.exports = {
         "jsdoc/require-returns-type": [
             "off",
         ],
+
+        "no-shadow": [
+            "off",
+        ],
+        "@typescript-eslint/no-shadow": [
+            "error",
+        ],
+        "@typescript-eslint/restrict-template-expressions": [
+            "error",
+            {
+                allowNumber: true,
+            },
+        ],
+        "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
     },
 };
 /* eslint-enable sort-keys, no-undef */

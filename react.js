@@ -141,7 +141,7 @@ module.exports = {
         "react/boolean-prop-naming": [
             "error",
             {
-                rule: "^(is|has|disabled|enabled)[A-Za-z0-9]*",
+                rule: "^(is|has|disable|enable)[A-Za-z0-9]*",
                 validateNested: false,
             },
         ],
@@ -280,7 +280,10 @@ module.exports = {
     },
     overrides: [
         {
-            files: ["*.jsx"],
+            files: [
+                "*.jsx",
+                "*.tsx",
+            ],
             rules: {
                 "max-lines-per-function": [
                     "error",

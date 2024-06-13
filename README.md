@@ -7,7 +7,7 @@ This repository contains ESLint configurations for various JavaScript environmen
 - `yscope/common`: A general ESLint configuration suitable for a wide range of JavaScript projects.
 - `yscope/react`: Tailored ESLint configuration for React applications.
 - `yscope/meteor`: A specialized ESLint configuration for Meteor projects.
-- `yscope/backend-ts`: Designed specifically for TypeScript backend applications.
+- `yscope/typescipt`: Designed specifically for TypeScript applications.
 ## Installation
 
 To get started with `eslint-config-yscope`, you can install the package:
@@ -46,16 +46,16 @@ eslintConfig
 }
 ```
 
-### For Backend TypeScript Configuration
+### For TypeScript Configuration
 TypeScript-related dependencies are not automatically installed because not every configuration requires them.
 Before you can use this configuration, you need to install the dependencies manually.
 ```shell
-npm install --save-dev typescript-eslint eslint-import-resolver-typescript
+npm install --save-dev eslint-import-resolver-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 Then in your ESLint configuration:
 ```json
 {
-  "extends": ["yscope/backend-ts"]
+  "extends": ["yscope/typescript"]
 }
 ```
 

@@ -16,6 +16,7 @@ module.exports = {
         "@stylistic/js",
         "@stylistic/plus",
         "simple-import-sort",
+        "import-newlines",
         "import",
         "jsdoc",
     ],
@@ -498,6 +499,7 @@ module.exports = {
             {
                 allow: [
                     "_id",
+                    "_malloc",
                 ],
             },
         ],
@@ -1283,6 +1285,13 @@ module.exports = {
         ],
         "@stylistic/plus/type-named-tuple-spacing": [
             "error",
+        ],
+
+        "import-newlines/enforce": [
+            "error",
+            {
+                items: 1,
+            },
         ],
         "import/newline-after-import": [
             "error",
