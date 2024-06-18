@@ -55,6 +55,7 @@ module.exports = {
             },
         ],
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+        "@typescript-eslint/member-ordering": "error",
     },
 };
 /* eslint-enable sort-keys, no-undef */
