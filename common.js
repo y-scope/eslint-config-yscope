@@ -353,6 +353,8 @@ module.exports = {
                     0,
                     1,
                     2,
+                    3,
+                    10,
                     100,
                 ],
                 ignoreArrayIndexes: true,
