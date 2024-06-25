@@ -1076,7 +1076,14 @@ module.exports = {
             "warn",
             {
                 code: 100,
+                tabWidth: 4,
                 comments: 100,
+                ignoreComments: false,
+                ignoreTrailingComments: false,
+                ignoreUrls: true,
+                ignoreStrings: false,
+                ignoreTemplateLiterals: false,
+                ignoreRegExpLiterals: true,
             },
         ],
         "@stylistic/js/max-statements-per-line": [
