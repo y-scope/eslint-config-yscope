@@ -70,7 +70,7 @@ module.exports = {
         ],
         "curly": [
             "error",
-            "multi-line",
+            "all",
         ],
         "default-case": [
             "error",
