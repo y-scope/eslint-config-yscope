@@ -1,4 +1,4 @@
-/* eslint-disable sort-keys, no-undef */
+/* eslint-disable sort-keys */
 module.exports = {
     env: {
         browser: true,
@@ -297,4 +297,4 @@ module.exports = {
         },
     ],
 };
-/* eslint-disable sort-keys, no-undef */
+/* eslint-disable sort-keys */

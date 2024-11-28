@@ -1,4 +1,4 @@
-/* eslint-disable sort-keys, no-undef */
+/* eslint-disable sort-keys */
 module.exports = {
     env: {
         node: true,
@@ -58,4 +58,4 @@ module.exports = {
         "@typescript-eslint/member-ordering": "error",
     },
 };
-/* eslint-enable sort-keys, no-undef */
+/* eslint-enable sort-keys */

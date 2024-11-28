@@ -1,4 +1,4 @@
-/* eslint-disable sort-keys, max-lines, no-undef, no-magic-numbers */
+/* eslint-disable sort-keys, max-lines, no-magic-numbers */
 module.exports = {
     env: {
         es6: true,
@@ -1523,4 +1523,4 @@ module.exports = {
         ],
     },
 };
-/* eslint-disable sort-keys, max-lines, no-undef, no-magic-numbers */
+/* eslint-disable sort-keys, max-lines, no-magic-numbers */
