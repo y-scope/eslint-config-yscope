@@ -40,6 +40,28 @@ The available configs are:
 - `yscope/react`: Tailored ESLint configuration for React applications.
 - `yscope/meteor`: A specialized ESLint configuration for Meteor projects.
 - `yscope/typescipt`: Designed specifically for TypeScript applications.
+- `yscope/jest`: A Jest-specific ESLint configuration intended to override other configurations for Jest test files.
+
+### Jest-Specific Configuration
+
+The Jest configuration is **not standalone** and should be used alongside other configurations. It is intended to
+override rules for Jest test files, so it should appear *last* in your `overrides` array.
+
+#### Example Usage
+
+If your project uses Jest, you can add an override for your test files as follows:
+
+```json5
+{
+  "overrides": [
+    // ...
+    {
+      "files": ["test/**/*"],
+      "extends": ["yscope/jest"]
+    }
+  ]
+}
+```
 
 ### For TypeScript Configuration
 
