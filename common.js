@@ -1053,7 +1053,7 @@ module.exports = {
         "@stylistic/js/lines-around-comment": [
             "error",
             {
-                ignorePattern: "Enum",
+                ignorePattern: "c8|Enum",
                 beforeBlockComment: true,
                 afterBlockComment: false,
                 beforeLineComment: true,
