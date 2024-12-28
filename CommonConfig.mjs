@@ -2,7 +2,7 @@
 
 import StylisticJsPlugin from "@stylistic/eslint-plugin-js";
 import StylisticPlusPlugin from "@stylistic/eslint-plugin-plus";
-import ImportPlugin from "eslint-plugin-import";
+import importPlugin from "eslint-plugin-import";
 import ImportNewlinesPlugin from "eslint-plugin-import-newlines";
 import JsdocPlugin from "eslint-plugin-jsdoc";
 import NoAutofixPlugin from "eslint-plugin-no-autofix";
@@ -22,7 +22,7 @@ const CommonConfig = [{
     plugins: {
         "@stylistic/js": StylisticJsPlugin,
         "@stylistic/plus": StylisticPlusPlugin,
-        "import": ImportPlugin,
+        "import": importPlugin,
         "import-newlines": ImportNewlinesPlugin,
         "jsdoc": JsdocPlugin,
         "no-autofix": NoAutofixPlugin,

@@ -1,19 +1,19 @@
 import importPlugin from "eslint-plugin-import";
-import tseslint from "typescript-eslint";
+import TsEslint from "typescript-eslint";
 
 
 const TsConfig = [
-    ...tseslint.configs.strictTypeChecked,
+    ...TsEslint.configs.strictTypeChecked,
     ...importPlugin.flatConfigs.typescript,
     {
         languageOptions: {
-            parser: tseslint.parser,
+            parser: TsEslint.parser,
             parserOptions: {
                 project: "tsconfig.json",
             },
         },
         plugins: {
-            "@typescript-eslint": tseslint.plugin,
+            "@typescript-eslint": TsEslint.plugin,
         },
         rules: {
             "jsdoc/check-types": ["off"],

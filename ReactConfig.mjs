@@ -1,6 +1,6 @@
 import StylisticJsxPlugin from "@stylistic/eslint-plugin-jsx";
-import ReactPlugin from "eslint-plugin-react";
-import ReactHooksPlugin from "eslint-plugin-react-hooks";
+import reactPlugin from "eslint-plugin-react";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
 import globals from "globals";
 
 import CommonConfig from "./CommonConfig.mjs";
@@ -22,8 +22,8 @@ const ReactConfig = [
         },
         plugins: {
             "@stylistic/jsx": StylisticJsxPlugin,
-            "react-hooks": ReactHooksPlugin,
-            "react": ReactPlugin,
+            "react-hooks": reactHooksPlugin,
+            "react": reactPlugin,
         },
         rules: {
             "@stylistic/jsx/jsx-child-element-spacing": ["error"],
