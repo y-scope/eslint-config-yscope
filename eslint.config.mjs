@@ -1,8 +1,19 @@
-import NodeConfig from "./NodeConfig.mjs";
+import globals from "globals";
+
+import CommonConfig from "./CommonConfig.mjs";
+import StylisticConfigArray from "./StylisticConfigArray.mjs";
 
 
 const EslintConfig = [
-    ...NodeConfig,
+    CommonConfig,
+    ...StylisticConfigArray,
+    {
+        languageOptions: {
+            globals: {
+                ...globals.node,
+            },
+        },
+    },
 ];
 
 

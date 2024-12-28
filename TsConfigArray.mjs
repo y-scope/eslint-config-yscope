@@ -1,12 +1,8 @@
 import importPlugin from "eslint-plugin-import";
 import TsEslint from "typescript-eslint";
 
-import CommonConfig from "./CommonConfig.mjs";
-import StylisticConfig from "./StylisticConfig.mjs";
 
-
-const TsConfig = [
-    ...CommonConfig,
+const TsConfigArray = [
     ...TsEslint.configs.strictTypeChecked,
     importPlugin.flatConfigs.typescript,
     {
@@ -48,8 +44,7 @@ const TsConfig = [
             },
         },
     },
-    ...StylisticConfig,
 ];
 
 
-export default TsConfig;
+export default TsConfigArray;

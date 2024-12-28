@@ -3,7 +3,7 @@
 import StylisticPlugin from "@stylistic/eslint-plugin";
 
 
-const StylisticConfig = [
+const StylisticConfigArray = [
     StylisticPlugin.configs["disable-legacy"],
     {
         plugins: {
@@ -328,4 +328,4 @@ const StylisticConfig = [
     },
 ];
 
-export default StylisticConfig;
+export default StylisticConfigArray;

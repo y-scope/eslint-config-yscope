@@ -1,10 +1,10 @@
 import globals from "globals";
 
-import ReactConfig from "./ReactConfig.mjs";
+import ReactConfigArray from "./ReactConfigArray.mjs";
 
 
-const MeteorConfig = [
-    ...ReactConfig,
+const MeteorConfigArray = [
+    ...ReactConfigArray,
     {
         languageOptions: {
             globals: {
@@ -25,4 +25,4 @@ const MeteorConfig = [
 ];
 
 
-export default MeteorConfig;
+export default MeteorConfigArray;

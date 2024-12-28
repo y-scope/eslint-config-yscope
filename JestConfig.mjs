@@ -1,7 +1,7 @@
 import globals from "globals";
 
 
-const JestConfig = [{
+const JestConfig = {
     languageOptions: {
         globals: {
             ...globals.jest,
@@ -17,7 +17,7 @@ const JestConfig = [{
             },
         ],
     },
-}];
+};
 
 
 export default JestConfig;

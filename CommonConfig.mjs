@@ -7,7 +7,7 @@ import NoAutofixPlugin from "eslint-plugin-no-autofix";
 import SimpleImportSortPlugin from "eslint-plugin-simple-import-sort";
 
 
-const CommonConfig = [{
+const CommonConfig = {
     languageOptions: {
         ecmaVersion: "latest",
         sourceType: "module",
@@ -441,7 +441,7 @@ const CommonConfig = [{
             },
         },
     },
-}];
+};
 
 
 export default CommonConfig;

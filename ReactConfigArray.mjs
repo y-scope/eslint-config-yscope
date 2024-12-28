@@ -2,12 +2,8 @@ import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import globals from "globals";
 
-import CommonConfig from "./CommonConfig.mjs";
-import StylisticConfig from "./StylisticConfig.mjs";
 
-
-const ReactConfig = [
-    ...CommonConfig,
+const ReactConfigArray = [
     {
         languageOptions: {
             globals: {
@@ -134,8 +130,7 @@ const ReactConfig = [
                 }],
         },
     },
-    ...StylisticConfig,
 ];
 
 
-export default ReactConfig;
+export default ReactConfigArray;
