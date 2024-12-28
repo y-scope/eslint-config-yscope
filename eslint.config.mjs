@@ -1,4 +1,4 @@
-import NodeConfig from "./node.mjs";
+import NodeConfig from "./NodeConfig.mjs";
 
 
 const config = [

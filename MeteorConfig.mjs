@@ -1,9 +1,9 @@
 import globals from "globals";
 
-import ReactConfig from "./react.mjs";
+import ReactConfig from "./ReactConfig.mjs";
 
 
-const config = [
+const MeteorConfig = [
     ...ReactConfig,
     {
         languageOptions: {
@@ -25,4 +25,4 @@ const config = [
 ];
 
 
-export default config;
+export default MeteorConfig;

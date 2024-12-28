@@ -1,9 +1,9 @@
 import globals from "globals";
 
-import CommonConfig from "./_common.mjs";
+import CommonConfig from "./CommonConfig.mjs";
 
 
-const config = [
+const NodeConfig = [
     ...CommonConfig,
     {
         languageOptions: {
@@ -15,4 +15,4 @@ const config = [
 ];
 
 
-export default config;
+export default NodeConfig;

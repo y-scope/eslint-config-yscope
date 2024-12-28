@@ -2,7 +2,7 @@ import importPlugin from "eslint-plugin-import";
 import tseslint from "typescript-eslint";
 
 
-const Config = [
+const TsConfig = [
     ...tseslint.configs.strictTypeChecked,
     ...importPlugin.flatConfigs.typescript,
     {
@@ -47,4 +47,4 @@ const Config = [
 ];
 
 
-export default Config;
+export default TsConfig;
