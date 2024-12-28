@@ -305,7 +305,6 @@ const CommonConfig = [{
             "warn",
             {
                 groups: [
-                    ["^\\u0000"],
                     ["^node:"],
                     [
                         "^meteor",
@@ -317,6 +316,7 @@ const CommonConfig = [{
                     ["^/"],
                     ["^"],
                     ["^\\."],
+                    ["^\\u0000"],
                 ],
             },
         ],
