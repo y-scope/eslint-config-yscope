@@ -7,7 +7,6 @@ const config = [{
             ...globals.jest,
         },
     },
-
     rules: {
         "no-magic-numbers": "off",
 
