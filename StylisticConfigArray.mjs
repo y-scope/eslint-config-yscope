@@ -183,6 +183,9 @@ const StylisticConfigArray = [
                         "let",
                         "var",
                         "function",
+                        "enum",
+                        "interface",
+                        "type",
                     ],
                     next: "*",
                 },
@@ -209,6 +212,11 @@ const StylisticConfigArray = [
                         "let",
                         "var",
                     ],
+                },
+                {
+                    blankLine: "never",
+                    prev: "function-overload",
+                    next: "function",
                 },
             ],
             "@stylistic/quote-props": [
