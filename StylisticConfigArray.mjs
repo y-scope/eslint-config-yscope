@@ -92,22 +92,9 @@ const StylisticConfigArray = [
             "@stylistic/lines-around-comment": [
                 "error",
                 {
-                /* eslint-disable sort-keys */
                     ignorePattern: "c8|Enum",
-                    beforeBlockComment: true,
                     afterBlockComment: false,
-                    beforeLineComment: true,
                     afterLineComment: false,
-                    afterHashbangComment: true,
-                    allowBlockStart: true,
-                    allowBlockEnd: true,
-                    allowClassStart: true,
-                    allowClassEnd: true,
-                    allowObjectStart: true,
-                    allowObjectEnd: true,
-                    allowArrayStart: true,
-                    allowArrayEnd: true,
-                /* eslint-enable sort-keys */
                 },
             ],
             "@stylistic/lines-between-class-members": ["error"],
