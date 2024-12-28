@@ -25,9 +25,9 @@ const TsConfigArray = [
             "no-restricted-syntax": ["off"],
             "no-shadow": ["off"],
 
-            "@typescript-eslint/member-ordering": "error",
+            "@typescript-eslint/member-ordering": ["error"],
             "@typescript-eslint/no-shadow": ["error"],
-            "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+            "@typescript-eslint/no-unnecessary-boolean-literal-compare": ["off"],
             "@typescript-eslint/restrict-template-expressions": [
                 "error",
                 {
