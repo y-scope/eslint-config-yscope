@@ -80,9 +80,6 @@ const config = [
             "id-length": ["off"],
             "id-match": ["error"],
             "init-declarations": ["off"],
-
-            // FIXME: deprecated in ESLint v9.3.0
-            "line-comment-position": ["error"],
             "logical-assignment-operators": ["error"],
             "max-classes-per-file": ["error"],
             "max-depth": ["error"],
@@ -100,9 +97,6 @@ const config = [
                 "error",
                 {max: 20},
             ],
-
-            // FIXME: deprecated in ESLint v9.3.0
-            "multiline-comment-style": ["off"],
             "new-cap": ["error"],
             "no-alert": ["error"],
             "no-array-constructor": ["error"],
@@ -424,6 +418,7 @@ const config = [
                 {afterColon: true},
             ],
             "@stylistic/js/keyword-spacing": ["error"],
+            "@stylistic/js/line-comment-position": ["error"],
             "@stylistic/js/linebreak-style": [
                 "error",
                 "unix",
@@ -463,6 +458,7 @@ const config = [
                 },
             ],
             "@stylistic/js/max-statements-per-line": ["error"],
+            "@stylistic/js/multiline-comment-style": ["off"],
             "@stylistic/js/multiline-ternary": ["error"],
             "@stylistic/js/new-parens": ["error"],
             "@stylistic/js/newline-per-chained-call": ["error"],
@@ -576,6 +572,7 @@ const config = [
             "@stylistic/js/wrap-iife": ["error"],
             "@stylistic/js/wrap-regex": ["error"],
             "@stylistic/js/yield-star-spacing": ["error"],
+
             "@stylistic/plus/indent-binary-ops": ["off"],
             "@stylistic/plus/type-generic-spacing": ["error"],
             "@stylistic/plus/type-named-tuple-spacing": ["error"],
