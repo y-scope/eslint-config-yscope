@@ -114,6 +114,7 @@ const config = [
             "no-class-assign": ["error"],
             "no-compare-neg-zero": ["error"],
             "no-cond-assign": ["error"],
+            "no-console": ["off"],
             "no-const-assign": ["error"],
             "no-constant-binary-expression": ["error"],
             "no-constant-condition": [
@@ -262,6 +263,7 @@ const config = [
                 {args: "none"},
             ],
             "no-use-before-define": ["error"],
+            "no-useless-assignment": ["error"],
             "no-useless-backreference": ["error"],
             "no-useless-call": ["error"],
             "no-useless-catch": ["error"],
@@ -311,7 +313,7 @@ const config = [
             "prefer-template": ["error"],
             "radix": ["error"],
             "require-atomic-updates": ["warn"],
-            "require-await": ["off"],
+            "require-await": ["warn"],
             "require-unicode-regexp": ["off"],
             "require-yield": ["error"],
             "simple-import-sort/exports": ["warn"],
@@ -325,6 +327,8 @@ const config = [
                             "^react",
                         ],
                         ["^\\w"],
+
+                        // FIXME: remove?
                         ["^@"],
                         ["^@mui/icons-material"],
                         ["^/"],
@@ -351,7 +355,6 @@ const config = [
                 "always",
             ],
 
-            // deprecated by `@stylistic`
             "@stylistic/js/array-bracket-newline": [
                 "error",
                 "consistent",
