@@ -310,16 +310,18 @@ const config = [
                 "warn",
                 {
                     groups: [
+                        ["^\\u0000"],
+                        ["^node:"],
                         [
                             "^meteor",
                             "^prop-types",
                             "^react",
                         ],
-                        ["^\\w"],
+                        ["^@?\\w"],
                         ["^@mui/icons-material"],
                         ["^/"],
-                        ["^[./]"],
-                        ["^\\\\u0000"],
+                        ["^"],
+                        ["^\\."],
                     ],
                 },
             ],
