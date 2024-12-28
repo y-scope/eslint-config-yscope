@@ -7,15 +7,11 @@ import ImportNewlinesPlugin from "eslint-plugin-import-newlines";
 import JsdocPlugin from "eslint-plugin-jsdoc";
 import NoAutofixPlugin from "eslint-plugin-no-autofix";
 import SimpleImportSortPlugin from "eslint-plugin-simple-import-sort";
-import globals from "globals";
 
 
 const config = [
     {
         languageOptions: {
-            globals: {
-                ...globals.node,
-            },
             ecmaVersion: "latest",
             sourceType: "module",
             parserOptions: {
