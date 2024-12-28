@@ -1,14 +1,13 @@
 /* eslint-disable sort-keys, max-lines, no-magic-numbers */
 
+import StylisticJsPlugin from "@stylistic/eslint-plugin-js";
+import StylisticPlusPlugin from "@stylistic/eslint-plugin-plus";
 import ImportPlugin from "eslint-plugin-import";
 import ImportNewlinesPlugin from "eslint-plugin-import-newlines";
 import JsdocPlugin from "eslint-plugin-jsdoc";
 import NoAutofixPlugin from "eslint-plugin-no-autofix";
 import SimpleImportSortPlugin from "eslint-plugin-simple-import-sort";
 import globals from "globals";
-
-import StylisticJsPlugin from "@stylistic/eslint-plugin-js";
-import StylisticPlusPlugin from "@stylistic/eslint-plugin-plus";
 
 
 const config = [

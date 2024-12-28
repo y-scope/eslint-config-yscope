@@ -1,8 +1,8 @@
-import common from "./common.mjs";
+import NodeConfig from "./node.mjs";
 
 
 const config = [
-    ...common,
+    ...NodeConfig,
 ];
 
 
