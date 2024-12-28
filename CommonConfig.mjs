@@ -338,26 +338,26 @@ const CommonConfig = {
             "always",
         ],
 
-        "import/named": ["error"],
         "import-newlines/enforce": [
             "error",
             {items: 1},
         ],
+
+        "import/default": ["error"],
+        "import/export": ["error"],
+        "import/named": ["error"],
+        "import/namespace": ["error"],
         "import/newline-after-import": [
             "error",
             {count: 2, exactCount: true, considerComments: true},
         ],
+        "import/no-duplicates": ["error"],
+        "import/no-named-as-default": ["warn"],
+        "import/no-named-as-default-member": ["warn"],
         "import/no-unresolved": [
             "error",
             {ignore: ["^/imports"], caseSensitive: true, caseSensitiveStrict: false},
         ],
-
-        "import/namespace": ["error"],
-        "import/default": ["error"],
-        "import/export": ["error"],
-        "import/no-named-as-default": ["warn"],
-        "import/no-named-as-default-member": ["warn"],
-        "import/no-duplicates": ["error"],
 
         "jsdoc/check-access": ["warn"],
         "jsdoc/check-alignment": ["warn"],
