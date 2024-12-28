@@ -1,9 +1,9 @@
-import StylisticJsxPlugin from "@stylistic/eslint-plugin-jsx";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import globals from "globals";
 
 import CommonConfig from "./CommonConfig.mjs";
+import StylisticConfig from "./StylisticConfig.mjs";
 
 
 const ReactConfig = [
@@ -21,92 +21,10 @@ const ReactConfig = [
             },
         },
         plugins: {
-            "@stylistic/jsx": StylisticJsxPlugin,
             "react-hooks": reactHooksPlugin,
             "react": reactPlugin,
         },
         rules: {
-            "@stylistic/jsx/jsx-child-element-spacing": ["error"],
-            "@stylistic/jsx/jsx-closing-bracket-location": [
-                "error",
-                {
-                    nonEmpty: "tag-aligned",
-                    selfClosing: "after-props",
-                },
-            ],
-            "@stylistic/jsx/jsx-closing-tag-location": ["error"],
-            "@stylistic/jsx/jsx-curly-brace-presence": [
-                "error",
-                {
-                    props: "always",
-                    children: "ignore",
-                },
-            ],
-            "@stylistic/jsx/jsx-curly-newline": [
-                "error",
-                {
-                    multiline: "consistent",
-                    singleline: "forbid",
-                },
-            ],
-            "@stylistic/jsx/jsx-curly-spacing": ["error"],
-            "@stylistic/jsx/jsx-equals-spacing": ["error"],
-            "@stylistic/jsx/jsx-first-prop-new-line": [
-                "error",
-                "multiline",
-            ],
-            "@stylistic/jsx/jsx-function-call-newline": [
-                "error",
-                "multiline",
-            ],
-            "@stylistic/jsx/jsx-indent": ["error"],
-            "@stylistic/jsx/jsx-indent-props": ["error"],
-            "@stylistic/jsx/jsx-max-props-per-line": [
-                "error",
-                {
-                    maximum: 1,
-                    when: "always",
-                },
-            ],
-            "@stylistic/jsx/jsx-newline": ["off"],
-            "@stylistic/jsx/jsx-one-expression-per-line": [
-                "error",
-                {
-                    allow: "literal",
-                },
-            ],
-            "@stylistic/jsx/jsx-pascal-case": ["error"],
-            "@stylistic/jsx/jsx-props-no-multi-spaces": ["off"],
-            "@stylistic/jsx/jsx-self-closing-comp": ["error"],
-            "@stylistic/jsx/jsx-sort-props": [
-                "error",
-                {
-                    callbacksLast: true,
-                    ignoreCase: true,
-                    locale: "auto",
-                    multiline: "last",
-                    shorthandFirst: true,
-                },
-            ],
-            "@stylistic/jsx/jsx-tag-spacing": [
-                "error",
-                {
-                    closingSlash: "never",
-                    beforeSelfClosing: "never",
-                    afterOpening: "never",
-                    beforeClosing: "never",
-                },
-            ],
-            "@stylistic/jsx/jsx-wrap-multilines": [
-                "error",
-                {
-                    arrow: "parens-new-line",
-                    assignment: "parens-new-line",
-                    declaration: "parens-new-line",
-                    return: "parens-new-line",
-                },
-            ],
-
             "react-hooks/exhaustive-deps": ["warn"],
             "react-hooks/rules-of-hooks": ["error"],
 
@@ -216,6 +134,7 @@ const ReactConfig = [
                 }],
         },
     },
+    ...StylisticConfig,
 ];
 
 
