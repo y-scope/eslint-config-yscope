@@ -161,7 +161,7 @@ const StylisticConfigArray = [
             ],
             "@stylistic/object-property-newline": [
                 "error",
-                {allowAllPropertiesOnSameLine: true, allowMultiplePropertiesPerLine: false},
+                {allowAllPropertiesOnSameLine: true},
             ],
             "@stylistic/one-var-declaration-per-line": ["error"],
             "@stylistic/operator-linebreak": [
