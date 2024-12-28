@@ -321,9 +321,6 @@ const config = [
                             "^react",
                         ],
                         ["^\\w"],
-
-                        // FIXME: remove?
-                        ["^@"],
                         ["^@mui/icons-material"],
                         ["^/"],
                         ["^[./]"],
