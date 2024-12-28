@@ -8,7 +8,7 @@ import StylisticConfig from "./StylisticConfig.mjs";
 const TsConfig = [
     ...CommonConfig,
     ...TsEslint.configs.strictTypeChecked,
-    ...importPlugin.flatConfigs.typescript,
+    importPlugin.flatConfigs.typescript,
     {
         languageOptions: {
             parser: TsEslint.parser,
