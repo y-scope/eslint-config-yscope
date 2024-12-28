@@ -126,6 +126,19 @@ const StylisticConfigArray = [
                 },
             ],
             "@stylistic/max-statements-per-line": ["error"],
+            "@stylistic/member-delimiter-style": [
+                "error",
+                {
+                    multiline: {
+                        delimiter: "comma",
+                        requireLast: true,
+                    },
+                    singleline: {
+                        delimiter: "comma",
+                        requireLast: false,
+                    },
+                },
+            ],
             "@stylistic/multiline-comment-style": ["off"],
             "@stylistic/multiline-ternary": ["error"],
             "@stylistic/new-parens": ["error"],
