@@ -1,9 +1,9 @@
 import NodeConfig from "./NodeConfig.mjs";
 
 
-const config = [
+const EslintConfig = [
     ...NodeConfig,
 ];
 
 
-export default config;
+export default EslintConfig;
