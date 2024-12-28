@@ -570,9 +570,14 @@ const config = [
             "@stylistic/js/wrap-regex": ["error"],
             "@stylistic/js/yield-star-spacing": ["error"],
 
+            "@stylistic/plus/curly-newline": [
+                "error",
+                "always",
+            ],
             "@stylistic/plus/indent-binary-ops": ["off"],
             "@stylistic/plus/type-generic-spacing": ["error"],
             "@stylistic/plus/type-named-tuple-spacing": ["error"],
+
             "import-newlines/enforce": [
                 "error",
                 {items: 1},
