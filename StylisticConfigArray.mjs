@@ -24,7 +24,10 @@ const StylisticConfigArray = [
             ],
             "@stylistic/arrow-parens": ["error"],
             "@stylistic/arrow-spacing": ["error"],
-            "@stylistic/block-spacing": ["error"],
+            "@stylistic/block-spacing": [
+                "error",
+                "never",
+            ],
             "@stylistic/brace-style": [
                 "error",
                 "1tbs",
