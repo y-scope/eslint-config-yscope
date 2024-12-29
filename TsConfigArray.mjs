@@ -2,6 +2,29 @@ import importPlugin from "eslint-plugin-import";
 import TsEslint from "typescript-eslint";
 
 
+/**
+ * Generates an override configuration for a TypeScript project specific to
+ * file inclusion, parser options, and import resolution settings.
+ *
+ * @param {string[]} files Paths to include in the configuration.
+ * @param {string} project Path to the TypeScript configuration file (tsconfig.json).
+ * @return {object} The configuration object.
+ */
+const createTsConfigOverride = (files, project) => ({
+    files: files,
+    languageOptions: {
+        parserOptions: {project: project},
+    },
+    settings: {
+        "import/resolver": {
+            typescript: {
+                project: project,
+            },
+        },
+    },
+});
+
+
 const TsConfigArray = [
     ...TsEslint.configs.strictTypeChecked,
     importPlugin.flatConfigs.typescript,
@@ -46,5 +69,5 @@ const TsConfigArray = [
     },
 ];
 
-
+export {createTsConfigOverride};
 export default TsConfigArray;
