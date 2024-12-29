@@ -41,7 +41,8 @@ objects into your own configuration array:
 - `StylisticConfigArray`: A configuration for stylistic formatting. It is typically combined with 
 - `CommonConfig`, as shown in the [ESLint config examples](#eslint-config-examples).
 - `ReactConfigArray`: A specialized ESLint configuration tailored for React applications.
-- `TsConfigArray`: A configuration designed specifically for TypeScript projects. Refer to the
+- `TsConfigArray`: A configuration designed specifically for TypeScript projects. A helper 
+`createTsConfigOverride` is also provided. Refer to the
 [ESLint config examples](#eslint-config-examples) for details on how to set it up.
 
 
@@ -122,6 +123,56 @@ objects into your own configuration array:
     
     export default EslintConfig;
     ```
+   
+4. For use with a TypeScript project with multiple `tsconfig.json` files:
+   In projects that include multiple `tsconfig.json` files for different source types, such as a 
+Vite project created from the `react-ts` template, you can use the helper function 
+`createTsConfigOverride` to generate configuration overrides. This ensures proper handling of
+imports and resolution.
+   ```javascript
+   import CommonConfig from "eslint-config-yscope/CommonConfig.mjs";
+   import ReactConfigArray from "eslint-config-yscope/ReactConfigArray.mjs";
+   import StylisticConfigArray from "eslint-config-yscope/StylisticConfigArray.mjs";
+   import TsConfigArray, {createTsConfigOverride} from "eslint-config-yscope/TsConfigArray.mjs";
+   
+   
+   const EslintConfig = [
+       {
+           ignores: [
+               "dist/",
+               "node_modules/",
+           ],
+       },
+       CommonConfig,
+       ...TsConfigArray.map(
+           (config) => ({
+               files: [
+                   "**/*.ts",
+                   "**/*.tsx",
+               ],
+               ...config,
+           })
+       ),
+       createTsConfigOverride(
+           [
+               "src/**/*.ts",
+               "src/**/*.tsx",
+           ],
+           "tsconfig.app.json"
+       ),
+       createTsConfigOverride(
+           ["vite.config.ts"],
+           "tsconfig.node.json"
+       ),
+       ...StylisticConfigArray,
+       ...ReactConfigArray,
+   ];
+   
+   
+   export default EslintConfig;
+   ```
+
+
 
 ## Customization
 
