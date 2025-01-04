@@ -11,11 +11,6 @@ const CommonConfig = {
     languageOptions: {
         ecmaVersion: "latest",
         sourceType: "module",
-        parserOptions: {
-            ecmaFeatures: {
-                experimentalObjectRestSpread: true,
-            },
-        },
     },
     plugins: {
         "import": importPlugin,
