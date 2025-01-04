@@ -304,6 +304,41 @@ const CommonConfig = {
         "simple-import-sort/imports": [
             "warn",
             {
+                /*
+                // Built-in Node.js modules
+                import fs from "node:fs";
+                import path from "node:path";
+
+                // Framework libraries
+                import {Meteor} from "meteor/meteor";
+                import PropTypes from "prop-types";
+                import React from "react";
+                import ReactDOM from "react-dom";
+
+                // Third-party libraries
+                import axios from "axios";
+                import lodash from "lodash";
+
+                // UI icons
+                import {
+                    faBars,
+                    faFootball,
+                } from "@fortawesome/free-solid-svg-icons";
+                import BarChartIcon from "@mui/icons-material/BarChart";
+                import FoodBankIcon from "@mui/icons-material/FoodBank";
+
+                // Absolute imports (e.g., project-specific aliases)
+                import apiRoutes from "/api/routes";
+                import config from "/config";
+
+                // Relative imports
+                import App from "./components/App";
+                import helperFunction from "./utils";
+
+                // Side-effect imports (e.g., those which have `\u0000` prepended)
+                import "normalize.css";
+                import "./index.css";
+                */
                 groups: [
                     ["^node:"],
                     [
@@ -312,9 +347,11 @@ const CommonConfig = {
                         "^react",
                     ],
                     ["^@?\\w"],
-                    ["^@mui/icons-material"],
+                    [
+                        "^@fortawesome",
+                        "^@mui/icons-material",
+                    ],
                     ["^/"],
-                    ["^"],
                     ["^\\."],
                     ["^\\u0000"],
                 ],
