@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/y-scope/eslint-config-yscope.git"
   },
-  "author": "YScope Inc.",
+  "author": "YScope Inc. <dev@yscope.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/y-scope/eslint-config-yscope/issues"
+  },
+  "homepage": "https://github.com/y-scope/eslint-config-yscope#readme",
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^2.12.1",
     "eslint": "^9.17.0",
