@@ -180,8 +180,8 @@ const CommonConfig = {
         "no-new-func": ["error"],
         "no-new-native-nonconstructor": ["error"],
 
-        // deprecated in ESLint v9.0.0 and replaced by the no-new-native-nonconstructor
-        "no-new-symbol": ["error"],
+        // Deprecated in ESLint v9.0.0 and replaced by `no-new-native-nonconstructor`
+        "no-new-symbol": ["off"],
         "no-new-wrappers": ["error"],
         "no-nonoctal-decimal-escape": ["error"],
         "no-obj-calls": ["error"],
