@@ -59,6 +59,8 @@ const StylisticConfigArray = [
                 "error",
                 "always",
             ],
+
+            // This rule was renamed to `@stylistic/function-call-spacing`.
             "@stylistic/func-call-spacing": ["off"],
             "@stylistic/function-call-argument-newline": [
                 "error",
