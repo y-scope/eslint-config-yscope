@@ -3,8 +3,11 @@ import TsEslint from "typescript-eslint";
 
 
 /**
- * Generates an override configuration for a TypeScript project specific to
- * file inclusion, parser options, and import resolution settings.
+ * Creates a configuration object for a TypeScript project.
+ *
+ * This function helps tailor ESLint to work with our TypeScript config by defining the files to
+ * include, pointing to the TypeScript project configuration file (tsconfig.json), and ensuring
+ * proper import resolution.
  *
  * @param {string[]} files Paths to include in the configuration.
  * @param {string} project Path to the TypeScript configuration file (tsconfig.json).
