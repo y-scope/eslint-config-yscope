@@ -19,7 +19,7 @@ yarn add --dev eslint-config-yscope
 This package requires ESLint 9, which in turn requires Node.js 18 or above. If you are using an
 older version of Node.js, you can use version `0.0.32` of this package, which is compatible with
 ESLint 8. Detailed setup instructions for this version are available in the 
-[older versions README][readme-0.0.32].
+[older version's README][readme-0.0.32].
 
 ## Usage
 
@@ -31,19 +31,18 @@ of your project and export an array of configuration objects.
 Some configurations are provided as standalone configuration objects, which can be directly
 referenced once imported:
 - `CommonConfig`: A general ESLint configuration suitable for a wide range of JavaScript projects.
-- `JestConfig`: A Jest-specific ESLint configuration intended to override other configurations for 
-Jest test files.
+- `JestConfig`: A specialized ESLint configuration for Jest files.
 - `MeteorConfig`: A specialized ESLint configuration for Meteor projects.
 
 The other configurations are provided as a group of configuration objects stored in an array. To use
 these configurations, you need to utilize the "spread" (`...`) syntax to unpack the configuration
 objects into your own configuration array:
-- `StylisticConfigArray`: A configuration for stylistic formatting. It is typically combined with 
-- `CommonConfig`, as shown in the [ESLint config examples](#eslint-config-examples).
-- `ReactConfigArray`: A specialized ESLint configuration tailored for React applications.
-- `TsConfigArray`: A configuration designed specifically for TypeScript projects. A helper 
-`createTsConfigOverride` is also provided. Refer to the
-[ESLint config examples](#eslint-config-examples) for details on how to set it up.
+- `StylisticConfigArray`: A configuration for stylistic formatting. It is typically combined with
+  `CommonConfig`, as shown in the [ESLint config examples](#eslint-config-examples).
+- `ReactConfigArray`: A specialized ESLint configuration for React applications.
+- `TsConfigArray`: A specialized ESLint configuration for TypeScript projects. A helper
+  `createTsConfigOverride` is also provided. See [ESLint config examples](#eslint-config-examples) for
+  details on how to set it up.
 
 
 ### ESLint config examples
@@ -52,8 +51,8 @@ objects into your own configuration array:
     ```javascript
     import globals from "globals";
     
-    import CommonConfig from "./CommonConfig.mjs";
-    import StylisticConfigArray from "./StylisticConfigArray.mjs";
+    import CommonConfig from "eslint-config-yscope/CommonConfig.mjs";
+    import StylisticConfigArray from "eslint-config-yscope/StylisticConfigArray.mjs";
     
     
     const EslintConfig = [
@@ -68,7 +67,7 @@ objects into your own configuration array:
         },
         {
             rules: {
-                // ... Your own overrides
+                // Your own overrides
             },
         },
     ];
@@ -105,7 +104,7 @@ objects into your own configuration array:
     const EslintConfig = [
         CommonConfig,
     
-        // Note below map has to be placed directly before the spreaded `StylisticConfigArray`
+        // NOTE: The map below must be placed directly before the spread `StylisticConfigArray`.
         ...TsConfigArray.map(
             (config) => ({
                 files: [
@@ -124,11 +123,10 @@ objects into your own configuration array:
     export default EslintConfig;
     ```
    
-4. For use with a TypeScript project with multiple `tsconfig.json` files:
-   In projects that include multiple `tsconfig.json` files for different source types, such as a 
-Vite project created from the `react-ts` template, you can use the helper function 
-`createTsConfigOverride` to generate configuration overrides. This ensures proper handling of
-imports and resolution.
+4. For use with a TypeScript project with multiple `tsconfig.json` files: In projects that include
+   multiple `tsconfig.json` files for different source types, such as a Vite project created from
+   the `react-ts` template, you can use the helper function `createTsConfigOverride` to generate
+   configuration overrides. This ensures proper handling of imports and resolution.
    ```javascript
    import CommonConfig from "eslint-config-yscope/CommonConfig.mjs";
    import ReactConfigArray from "eslint-config-yscope/ReactConfigArray.mjs";
