@@ -170,8 +170,6 @@ objects into your own configuration array:
    export default EslintConfig;
    ```
 
-
-
 ## Customization
 
 Each configuration can be further customized and extended as per your project's needs. You can
