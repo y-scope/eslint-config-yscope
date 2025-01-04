@@ -110,14 +110,16 @@ const StylisticConfigArray = [
                     allowObjectEnd: true,
                     allowArrayStart: true,
                     allowArrayEnd: true,
-                    allowEnumEnd: true,
+
+                    // TypeScript specific
                     allowEnumStart: true,
-                    allowInterfaceEnd: true,
+                    allowEnumEnd: true,
                     allowInterfaceStart: true,
-                    allowModuleEnd: true,
+                    allowInterfaceEnd: true,
                     allowModuleStart: true,
-                    allowTypeEnd: true,
+                    allowModuleEnd: true,
                     allowTypeStart: true,
+                    allowTypeEnd: true,
                 },
                 /* eslint-enable sort-keys */
             ],
