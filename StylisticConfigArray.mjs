@@ -60,7 +60,7 @@ const StylisticConfigArray = [
                 "always",
             ],
 
-            // This rule was renamed to `@stylistic/function-call-spacing`.
+            // Deprecated by `@stylistic/function-call-spacing`.
             "@stylistic/func-call-spacing": ["off"],
             "@stylistic/function-call-argument-newline": [
                 "error",
