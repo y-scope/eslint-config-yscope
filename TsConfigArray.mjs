@@ -10,18 +10,18 @@ import TsEslint from "typescript-eslint";
  * proper import resolution.
  *
  * @param {string[]} files Paths to include in the configuration.
- * @param {string} project Path to the TypeScript configuration file (tsconfig.json).
+ * @param {string} projectConfigPath Path to the corresponding `tsconfig.json`.
  * @return {object} The configuration object.
  */
-const createTsConfigOverride = (files, project) => ({
+const createTsConfigOverride = (files, projectConfigPath) => ({
     files: files,
     languageOptions: {
-        parserOptions: {project: project},
+        parserOptions: {project: projectConfigPath},
     },
     settings: {
         "import/resolver": {
             typescript: {
-                project: project,
+                project: projectConfigPath,
             },
         },
     },
