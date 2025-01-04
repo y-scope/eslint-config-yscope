@@ -50,6 +50,10 @@ const ReactConfigArray = [
                 },
             ],
 
+            // Recognizing delays in porting rules from `eslint-plugin-react` to
+            // `@stylistic/eslint-plugin-jsx`, we list all available JSX rules from
+            // `eslint-plugin-react` below for reference. However, we only enable those that are
+            // useful and not yet covered by `@stylistic/eslint-plugin-jsx`.
             "react/jsx-boolean-value": [
                 "warn",
                 "always",
