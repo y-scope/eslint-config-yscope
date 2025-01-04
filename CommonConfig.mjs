@@ -202,7 +202,8 @@ const CommonConfig = {
         "no-restricted-syntax": [
             "error",
             {
-                message: "Direct exporting of declarations is not allowed. Use export list or default exports instead.",
+                message: `Direct exporting of declarations is not allowed. Use export list or
+default exports instead.`,
                 selector: "ExportNamedDeclaration[declaration!=null]",
             },
         ],
@@ -441,7 +442,8 @@ const CommonConfig = {
             "warn",
             {
                 contexts: [
-                    ":has(VariableDeclarator[init.callee.object.name='Object'][init.callee.property.name='freeze'])[declarations]",
+                    ":has(VariableDeclarator[init.callee.object.name='Object']" +
+                    "[init.callee.property.name='freeze'])[declarations]",
                     "Program > VariableDeclaration > .declarations > ArrowFunctionExpression",
                 ],
                 require: {FunctionDeclaration: true, FunctionExpression: true},
