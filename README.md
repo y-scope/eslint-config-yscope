@@ -180,11 +180,6 @@ override specific rules by adding them to your ESLint configuration file.
 We welcome contributions to the `eslint-config-yscope`! If you have suggestions or improvements,
 feel free to open an issue or a pull request.
 
-## License
-
-This project is licensed under Apache License 2.0. Please see the [LICENSE][license] file for more
-details.
-
 [eslint-flat-config]: https://eslint.org/docs/v9.x/use/configure/migration-guide
 [license]: https://github.com/y-scope/eslint-config-yscope/blob/main/LICENSE
 [readme-0.0.32]: https://github.com/y-scope/eslint-config-yscope/blob/f75571723ff1a6fd734ab82b4a399c2c1c92c5fb/README.md#for-older-nodejs-versions
