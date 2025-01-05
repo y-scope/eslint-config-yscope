@@ -1,4 +1,4 @@
-import globals from "globals";
+import Globals from "globals";
 
 import CommonConfig from "./CommonConfig.mjs";
 import StylisticConfigArray from "./StylisticConfigArray.mjs";
@@ -10,7 +10,7 @@ const EslintConfig = [
     {
         languageOptions: {
             globals: {
-                ...globals.node,
+                ...Globals.node,
             },
         },
     },

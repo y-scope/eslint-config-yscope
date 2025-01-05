@@ -1,12 +1,12 @@
-import globals from "globals";
+import Globals from "globals";
 
 
 const MeteorConfig = {
     languageOptions: {
         globals: {
-            ...globals.jest,
-            ...globals.meteor,
-            ...globals.node,
+            ...Globals.jest,
+            ...Globals.meteor,
+            ...Globals.node,
         },
     },
     settings: {

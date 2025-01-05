@@ -1,13 +1,13 @@
-import reactPlugin from "eslint-plugin-react";
-import reactHooksPlugin from "eslint-plugin-react-hooks";
-import globals from "globals";
+import ReactPlugin from "eslint-plugin-react";
+import ReactHooksPlugin from "eslint-plugin-react-hooks";
+import Globals from "globals";
 
 
 const ReactConfigArray = [
     {
         languageOptions: {
             globals: {
-                ...globals.browser,
+                ...Globals.browser,
                 process: "readonly",
             },
             parserOptions: {
@@ -17,8 +17,8 @@ const ReactConfigArray = [
             },
         },
         plugins: {
-            "react-hooks": reactHooksPlugin,
-            "react": reactPlugin,
+            "react-hooks": ReactHooksPlugin,
+            "react": ReactPlugin,
         },
         rules: {
             "react-hooks/exhaustive-deps": ["warn"],

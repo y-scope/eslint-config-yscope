@@ -1,10 +1,10 @@
-import globals from "globals";
+import Globals from "globals";
 
 
 const JestConfig = {
     languageOptions: {
         globals: {
-            ...globals.jest,
+            ...Globals.jest,
         },
     },
     rules: {

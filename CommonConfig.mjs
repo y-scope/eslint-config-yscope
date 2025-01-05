@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 
-import importPlugin from "eslint-plugin-import";
+import ImportPlugin from "eslint-plugin-import";
 import ImportNewlinesPlugin from "eslint-plugin-import-newlines";
 import JsdocPlugin from "eslint-plugin-jsdoc";
 import NoAutofixPlugin from "eslint-plugin-no-autofix";
@@ -13,7 +13,7 @@ const CommonConfig = {
         sourceType: "module",
     },
     plugins: {
-        "import": importPlugin,
+        "import": ImportPlugin,
         "import-newlines": ImportNewlinesPlugin,
         "jsdoc": JsdocPlugin,
         "no-autofix": NoAutofixPlugin,

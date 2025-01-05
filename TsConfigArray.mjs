@@ -1,4 +1,4 @@
-import importPlugin from "eslint-plugin-import";
+import ImportPlugin from "eslint-plugin-import";
 import TsEslint from "typescript-eslint";
 
 
@@ -30,7 +30,7 @@ const createTsConfigOverride = (files, projectConfigPath) => ({
 
 const TsConfigArray = [
     ...TsEslint.configs.strictTypeChecked,
-    importPlugin.flatConfigs.typescript,
+    ImportPlugin.flatConfigs.typescript,
     {
         languageOptions: {
             parser: TsEslint.parser,
