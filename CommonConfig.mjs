@@ -301,6 +301,8 @@ const CommonConfig = {
             "warn",
             {
                 /*
+                // EXAMPLES
+                // ===
                 // Built-in Node.js modules
                 import fs from "node:fs";
                 import path from "node:path";
@@ -331,7 +333,7 @@ const CommonConfig = {
                 import App from "./components/App";
                 import helperFunction from "./utils";
 
-                // Side-effect imports (e.g., those which have `\u0000` prepended)
+                // Side-effect imports (those which have `\u0000` prepended)
                 import "normalize.css";
                 import "./index.css";
                 */
