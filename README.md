@@ -104,8 +104,6 @@ objects into your own configuration array:
     const EslintConfig = [
         CommonConfig,
     
-        // NOTE: The map below must be placed directly before the spread `StylisticConfigArray`, to
-        // disable conflicting TsEsLint rules by the Stylistic plugin's "disable-legacy" preset.
         ...TsConfigArray.map(
             (config) => ({
                 files: [
@@ -115,6 +113,10 @@ objects into your own configuration array:
                 ...config,
             })
         ),
+
+        // NOTE: `StylisticConfigArray` must be placed after `TsConfigArray` to override stylistic
+        // rules within `TsConfigArray` (we can't remove the stylistic rules from `TsConfigArray`
+        // since they come from a preset that `TsConfigArray` extends).
         ...StylisticConfigArray,
     
         ...ReactConfigArray,
