@@ -41,8 +41,8 @@ objects into your own configuration array:
   `CommonConfig`, as shown in the [ESLint config examples](#eslint-config-examples).
 - `ReactConfigArray`: A specialized ESLint configuration for React applications.
 - `TsConfigArray`: A specialized ESLint configuration for TypeScript projects. A helper
-  `createTsConfigOverride` is also provided. See [ESLint config examples](#eslint-config-examples) for
-  details on how to set it up.
+  `createTsConfigOverride` is also provided. See [ESLint config examples](#eslint-config-examples)
+  for details on how to set it up.
 
 
 ### ESLint config examples
