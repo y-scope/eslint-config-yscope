@@ -3,13 +3,9 @@ import TsEslint from "typescript-eslint";
 
 
 /**
- * Creates a configuration object for a TypeScript project.
+ * Gets an object containing the basic options to configure ESLint for a TypeScript project.
  *
- * This function helps tailor ESLint to work with our TypeScript config by defining the files to
- * include, pointing to the TypeScript project configuration file (tsconfig.json), and ensuring
- * proper import resolution.
- *
- * @param {string[]} files Paths to include in the configuration.
+ * @param {string[]} files Paths or globs for the TypeScript files to be linted.
  * @param {string} projectConfigPath Path to the corresponding `tsconfig.json`.
  * @return {object} The configuration object.
  */
