@@ -197,8 +197,8 @@ const CommonConfig = {
         "no-restricted-syntax": [
             "error",
             {
-                message: `Direct exporting of declarations is not allowed. Use export list or
-default exports instead.`,
+                message: "Direct exporting of declarations is not allowed. Use export list or " +
+                    "default exports instead.",
                 selector: "ExportNamedDeclaration[declaration!=null]",
             },
         ],
