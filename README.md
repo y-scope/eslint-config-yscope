@@ -49,7 +49,7 @@ objects into your own configuration array:
 
 1. For use with a CommonJS Node.js project:
     ```javascript
-    import globals from "globals";
+    import Globals from "globals";
     
     import CommonConfig from "eslint-config-yscope/CommonConfig.mjs";
     import StylisticConfigArray from "eslint-config-yscope/StylisticConfigArray.mjs";
