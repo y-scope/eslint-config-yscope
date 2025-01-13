@@ -1,32 +1,32 @@
 {
   "name": "eslint-config-yscope",
-  "version": "0.0.32",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
-    "release": "npm install && git diff --exit-code && npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "npm install && git diff --exit-code && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/y-scope/eslint-config-yscope.git"
   },
-  "author": "YScope Inc.",
-  "peerDependencies": {
-    "@stylistic/eslint-plugin-js": "^1.6.2",
-    "@stylistic/eslint-plugin-jsx": "^1.6.2",
-    "@stylistic/eslint-plugin-plus": "^1.6.2",
-    "eslint": "^8.57.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-import-newlines": "^1.4.0",
-    "eslint-plugin-jsdoc": "^48.2.3",
-    "eslint-plugin-no-autofix": "^1.2.3",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0"
+  "author": "YScope Inc. <dev@yscope.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/y-scope/eslint-config-yscope/issues"
   },
-  "eslintConfig": {
-    "extends": [
-      "./common"
-    ]
+  "homepage": "https://github.com/y-scope/eslint-config-yscope#readme",
+  "peerDependencies": {
+    "@stylistic/eslint-plugin": "^2.12.1",
+    "eslint": "^9.18.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-newlines": "^1.4.0",
+    "eslint-plugin-jsdoc": "^50.6.1",
+    "eslint-plugin-no-autofix": "^2.1.0",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.19.0"
   }
 }

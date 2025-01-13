@@ -1,9 +1,15 @@
-module.exports = {
-    env: {
-        jest: true,
+import Globals from "globals";
+
+
+const JestConfig = {
+    languageOptions: {
+        globals: {
+            ...Globals.jest,
+        },
     },
     rules: {
         "no-magic-numbers": "off",
+
         "jsdoc/check-tag-names": [
             "warn",
             {
@@ -12,3 +18,6 @@ module.exports = {
         ],
     },
 };
+
+
+export default JestConfig;
