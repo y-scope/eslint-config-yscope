@@ -66,7 +66,15 @@ const TsConfigArray = [
             },
         },
     },
-];
+].map(
+    (config) => ({
+        files: [
+            "**/*.ts",
+            "**/*.tsx",
+        ],
+        ...config,
+    })
+);
 
 export {createTsConfigOverride};
 export default TsConfigArray;
