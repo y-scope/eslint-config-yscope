@@ -104,15 +104,7 @@ objects into your own configuration array:
     const EslintConfig = [
         CommonConfig,
     
-        ...TsConfigArray.map(
-            (config) => ({
-                files: [
-                    "**/*.ts",
-                    "**/*.tsx",
-                ],
-                ...config,
-            })
-        ),
+        ...TsConfigArray,
 
         // NOTE: `StylisticConfigArray` must be placed after `TsConfigArray` to override stylistic
         // rules within `TsConfigArray` (we can't remove the stylistic rules from `TsConfigArray`
@@ -145,15 +137,8 @@ objects into your own configuration array:
            ],
        },
        CommonConfig,
-       ...TsConfigArray.map(
-           (config) => ({
-               files: [
-                   "**/*.ts",
-                   "**/*.tsx",
-               ],
-               ...config,
-           })
-       ),
+   
+       ...TsConfigArray,
        createTsConfigOverride(
            [
                "src/**/*.ts",
@@ -165,6 +150,7 @@ objects into your own configuration array:
            ["vite.config.ts"],
            "tsconfig.node.json"
        ),
+   
        ...StylisticConfigArray,
        ...ReactConfigArray,
    ];
