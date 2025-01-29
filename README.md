@@ -61,7 +61,7 @@ objects into your own configuration array:
         {
             languageOptions: {
                 globals: {
-                    ...globals.node,
+                    ...Globals.node,
                 },
             },
         },
