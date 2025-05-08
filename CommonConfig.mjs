@@ -5,6 +5,7 @@ import ImportNewlinesPlugin from "eslint-plugin-import-newlines";
 import JsdocPlugin from "eslint-plugin-jsdoc";
 import NoAutofixPlugin from "eslint-plugin-no-autofix";
 import SimpleImportSortPlugin from "eslint-plugin-simple-import-sort";
+import SortKeysPlusPlugin from "eslint-plugin-sort-keys-plus";
 
 
 const CommonConfig = {
@@ -18,6 +19,7 @@ const CommonConfig = {
         "jsdoc": JsdocPlugin,
         "no-autofix": NoAutofixPlugin,
         "simple-import-sort": SimpleImportSortPlugin,
+        "sort-keys-plus": SortKeysPlusPlugin,
     },
     rules: {
         "accessor-pairs": ["error"],
@@ -357,6 +359,11 @@ const CommonConfig = {
         ],
         "sort-imports": ["off"],
         "sort-keys": [
+            "warn",
+            "asc",
+            {allowLineSeparatedGroups: true, caseSensitive: true, minKeys: 5, natural: true},
+        ],
+        "sort-keys-plus/sort-keys": [
             "warn",
             "asc",
             {allowLineSeparatedGroups: true, caseSensitive: true, minKeys: 5, natural: true},
