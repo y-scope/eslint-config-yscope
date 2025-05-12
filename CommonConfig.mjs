@@ -358,11 +358,7 @@ const CommonConfig = {
             },
         ],
         "sort-imports": ["off"],
-        "sort-keys": [
-            "warn",
-            "asc",
-            {allowLineSeparatedGroups: true, caseSensitive: true, minKeys: 5, natural: true},
-        ],
+        "sort-keys": ["off"],
         "sort-keys-plus/sort-keys": [
             "warn",
             "asc",
