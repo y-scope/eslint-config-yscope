@@ -13,7 +13,7 @@ const CommonConfig = {
         sourceType: "module",
     },
     plugins: {
-        "import": ImportPlugin,
+        "import": ImportPlugin.flatConfigs.recommended.plugins.import,
         "import-newlines": ImportNewlinesPlugin,
         "jsdoc": JsdocPlugin,
         "no-autofix": NoAutofixPlugin,
