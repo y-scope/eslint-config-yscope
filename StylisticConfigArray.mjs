@@ -96,7 +96,7 @@ const StylisticConfigArray = [
             ],
             "@stylistic/lines-around-comment": [
                 "error",
-                /* eslint-disable sort-keys */
+                /* eslint-disable sort-keys-plus/sort-keys */
                 {
                     ignorePattern: "c8|Enum",
                     beforeBlockComment: true,
@@ -123,7 +123,7 @@ const StylisticConfigArray = [
                     allowTypeStart: true,
                     allowTypeEnd: true,
                 },
-                /* eslint-enable sort-keys */
+                /* eslint-enable sort-keys-plus/sort-keys */
             ],
             "@stylistic/lines-between-class-members": ["error"],
             "@stylistic/max-len": [
