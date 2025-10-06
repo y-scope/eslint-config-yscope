@@ -40,9 +40,13 @@ const TsConfigArray = [
         rules: {
             "jsdoc/check-types": ["off"],
             "jsdoc/no-types": ["warn"],
+            "jsdoc/require-next-type": ["off"],
             "jsdoc/require-param-type": ["off"],
             "jsdoc/require-property-type": ["off"],
             "jsdoc/require-returns-type": ["off"],
+            "jsdoc/require-throws-type": ["off"],
+            "jsdoc/require-yields-type": ["off"],
+            "jsdoc/type-formatting": ["off"],
 
             "no-restricted-syntax": ["off"],
             "no-shadow": ["off"],

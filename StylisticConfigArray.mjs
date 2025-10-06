@@ -351,6 +351,7 @@ const StylisticConfigArray = [
                 "always",
             ],
             "@stylistic/indent-binary-ops": ["off"],
+            "@stylistic/type-annotation-spacing": ["off"],
             "@stylistic/type-generic-spacing": ["error"],
             "@stylistic/type-named-tuple-spacing": ["error"],
         },
