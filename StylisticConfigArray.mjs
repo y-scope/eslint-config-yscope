@@ -298,6 +298,7 @@ const StylisticConfigArray = [
                 "error",
                 "multiline",
             ],
+            "@stylistic/jsx-indent": ["off"],
             "@stylistic/jsx-indent-props": ["error"],
             "@stylistic/jsx-max-props-per-line": [
                 "error",
