@@ -298,7 +298,7 @@ const StylisticConfigArray = [
                 "error",
                 "multiline",
             ],
-            "@stylistic/jsx-indent": ["error"],
+            "@stylistic/jsx-indent": ["off"],
             "@stylistic/jsx-indent-props": ["error"],
             "@stylistic/jsx-max-props-per-line": [
                 "error",
@@ -351,6 +351,7 @@ const StylisticConfigArray = [
                 "always",
             ],
             "@stylistic/indent-binary-ops": ["off"],
+            "@stylistic/type-annotation-spacing": ["warn"],
             "@stylistic/type-generic-spacing": ["error"],
             "@stylistic/type-named-tuple-spacing": ["error"],
         },
