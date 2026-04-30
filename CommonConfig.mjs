@@ -308,7 +308,6 @@ const CommonConfig = {
                 import path from "node:path";
 
                 // Framework libraries
-                import {Meteor} from "meteor/meteor";
                 import PropTypes from "prop-types";
                 import React from "react";
                 import ReactDOM from "react-dom";
@@ -340,7 +339,6 @@ const CommonConfig = {
                 groups: [
                     ["^node:"],
                     [
-                        "^meteor",
                         "^prop-types",
                         "^react",
                     ],
@@ -391,7 +389,7 @@ const CommonConfig = {
         "import/no-named-as-default-member": ["warn"],
         "import/no-unresolved": [
             "error",
-            {ignore: ["^/imports"], caseSensitive: true, caseSensitiveStrict: false},
+            {caseSensitive: true, caseSensitiveStrict: false},
         ],
 
         "jsdoc/check-access": ["warn"],
