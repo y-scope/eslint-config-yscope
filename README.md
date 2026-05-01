@@ -32,7 +32,6 @@ Some configurations are provided as standalone configuration objects, which can 
 referenced once imported:
 - `CommonConfig`: A general ESLint configuration suitable for a wide range of JavaScript projects.
 - `JestConfig`: A specialized ESLint configuration for Jest files.
-- `MeteorConfig`: A specialized ESLint configuration for Meteor projects.
 
 The other configurations are provided as a group of configuration objects stored in an array. To use
 these configurations, you need to utilize the "spread" (`...`) syntax to unpack the configuration
