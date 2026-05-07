@@ -48,7 +48,6 @@ const TsConfigArray = [
             "jsdoc/require-yields-type": ["off"],
             "jsdoc/type-formatting": ["off"],
 
-            "no-restricted-syntax": ["off"],
             "no-shadow": ["off"],
 
             "@typescript-eslint/member-ordering": ["error"],
