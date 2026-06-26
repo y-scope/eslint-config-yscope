@@ -282,8 +282,13 @@ const CommonConfig = {
             {
                 customGroups: [
                     {
+                        groupName: "callback-multiline",
+                        elementNamePattern: "^on[A-Z]",
+                        modifiers: ["multiline"],
+                    },
+                    {
                         groupName: "callback",
-                        elementNamePattern: "^on.+",
+                        elementNamePattern: "^on[A-Z]",
                     },
                 ],
                 groups: [
@@ -291,6 +296,7 @@ const CommonConfig = {
                     "prop",
                     "multiline-prop",
                     "callback",
+                    "callback-multiline",
                 ],
                 ignoreCase: true,
                 order: "asc",
