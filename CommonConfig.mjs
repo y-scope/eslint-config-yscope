@@ -292,9 +292,9 @@ const CommonConfig = {
                     },
                 ],
                 groups: [
-                    "shorthand-prop",
+                    "shorthand",
                     "prop",
-                    "multiline-prop",
+                    "multiline",
                     "callback",
                     "callback-multiline",
                 ],
